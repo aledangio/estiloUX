@@ -1,0 +1,163 @@
+
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+/* reset de propriedades */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EFEFEF;
+    color: grey;
+}
+
+/* h1, nav, a {
+    border: 1px solid white;
+} */
+
+/************************** HEADER **************************/
+header {
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #727272;
+    color: white;
+}
+header h1 {
+    color: #EFEFEF;
+    font-weight: 100;
+}
+
+header h1 span {
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+header nav {
+    display: flex;
+
+}
+
+header nav a {
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+
+    transition: background-color 0.4s;
+}
+
+/* pseudo-classe - estado específico do elemento */
+header nav a:hover {
+    background-color: #878787;
+}
+
+/************************** MAIN **************************/
+/* section */
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 820px;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+main h2, main p {
+    margin: 20px;
+    /* font-size: 12px; */
+}
+
+/* section */
+#cores-harmonia {
+    width: 70%;
+    max-width: 580px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#cores-harmonia img {
+    width: 100%;
+}
+
+aside {
+    width: 28%;
+    max-width: 230px;
+}
+
+aside div {
+    background-color: white;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+aside h2 {
+    margin: 0; /* retira a herança do h2 do main */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 2px solid #EFEFEF;
+}
+
+/* formulario */
+aside #buscar  {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+aside #buscar input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #efefef;
+}
+
+aside #buscar button {
+    width: 30px;
+    height: 30px;
+    background-color: #878787;
+    border: 1px solid #878787;
+}
+
+aside #buscar button i {
+    color: white;
+    font-size: 18px;
+}
+
+
+aside #post-anteriores-box ul {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+aside #inscrevase-box input {
+    display: block;
+    height: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #efefef;
+}
